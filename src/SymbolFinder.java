@@ -5,8 +5,8 @@ public class SymbolFinder
 {
     /*
      *  The goal of printOptionsAndCatchErrors is to find
-     *  what the user would like to do next: print a figure
-     *  or exit the program.
+     *  what the user would like to do next: list the figures
+     *  to print, print a figure or exit the program.
      */
     public static int printOptionsAndCatchErrors()
     {
@@ -14,8 +14,9 @@ public class SymbolFinder
         Boolean error = true;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("\n1. Print a Figure");
-        System.out.println("2. Exit");
+        System.out.println("\n1. List the Figures to Print");
+        System.out.println("2. Print a Figure");
+        System.out.println("3. Exit");
         System.out.print("\nWhat would you like to do? ");
 
 
@@ -29,7 +30,7 @@ public class SymbolFinder
                 {
                     System.out.println("\nThat is not a valid choice. Try again.");
                 }
-                else if (userChoice > 2)
+                else if (userChoice > 3)
                 {
                     System.out.println("\nThat is not a valid choice. Try again.");
                 }
@@ -50,8 +51,9 @@ public class SymbolFinder
 
             scanner.nextLine();
 
-            System.out.println("\n1. Print a Figure");
-            System.out.println("2. Exit");
+            System.out.println("\n1. List the Figures to Print");
+            System.out.println("2. Print a Figure");
+            System.out.println("3. Exit");
             System.out.print("\nWhat would you like to do? ");
         }
         return userChoice;
@@ -59,6 +61,7 @@ public class SymbolFinder
 
     public static void main(String[] args)
     {
+        SymbolList aList = new SymbolList();
         int userChoice;
         String userFigure = "";
 
@@ -67,16 +70,20 @@ public class SymbolFinder
 
         userChoice = printOptionsAndCatchErrors();
 
-        while(userChoice != 2)
+        while(userChoice != 3)
         {
             if (userChoice == 1)
             {
-                // Find a figure
+                // List the figures to print
+                aList.printTheList();
+            }
+            else if (userChoice == 2)
+            {
+                // Print a figure
+                aList.printAFigure();
             }
 
             userChoice = printOptionsAndCatchErrors();
         }
-
-        return;
     }
 }

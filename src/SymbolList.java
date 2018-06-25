@@ -1,2 +1,4 @@
-public class SymbolList {
+public class SymbolList
+{
+    Symbol[] theList = new Symbol[100];
 }

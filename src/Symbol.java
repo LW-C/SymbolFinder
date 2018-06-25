@@ -23,7 +23,7 @@ public class Symbol
         return symbolImage;
     }
 
-    public void Symbol(String n, String i)
+    public Symbol(String n, String i)
     {
         symbolName = n;
         symbolImage = i;

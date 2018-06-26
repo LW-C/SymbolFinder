@@ -31,8 +31,52 @@ public class SymbolList
     public void printAFigure()
     {
         boolean exit = false;
-
+        boolean validName = false;
+        String userInput = "";
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("\nEnter the name of the figure you would like to");
+        System.out.print("print, or X to return to the main menu: ");
+
+        while(!validName)
+        {
+            // Debugging
+            System.out.println("J");
+
+            userInput = scanner.nextLine();
+
+            if(userInput.equalsIgnoreCase("X"))
+                return;
+
+            for (int j = 0; j < theList.length; j++)
+            {
+                if(theList[j] == null)
+                {
+
+                    // Debugging
+                    System.out.println("K");
+
+                    break;
+                }
+
+                else if (userInput.equalsIgnoreCase(theList[j].getSymbolName()))
+                {
+                    validName = true;
+                    System.out.println("\nSymbol:");
+                    System.out.println(theList[j].getSymbolImage());
+                    return;
+                }
+
+                // Debugging
+                System.out.println("I");
+            }
+
+            scanner.nextLine();
+
+            System.out.println("\nInvalid name.");
+            System.out.println("Enter the name of the figure you would like to");
+            System.out.print("print, or X to return to the main menu: ");
+        }
     }
 
     public SymbolList()

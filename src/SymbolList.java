@@ -6,7 +6,7 @@ public class SymbolList
 
     /*
      *  The goal of printTheList is to print the name
-     *  of every figure in the list.
+     *  of every Symbol in the list.
      */
     public void printTheList()
     {
@@ -21,28 +21,25 @@ public class SymbolList
     }
 
     /*
-     *  The goal of printAFigure is to print the figure
+     *  The goal of printASymbol is to print the symbol
      *  specified by the user. If the user inputs "X"
      *  or "x" it exits the method. If the user inputs
      *  a name not found in the list, then the method
      *  gives an error and asks the user to input a
-     *  valid figure name.
+     *  valid symbol name.
      */
-    public void printAFigure()
+    public void printASymbol()
     {
         boolean exit = false;
         boolean validName = false;
         String userInput = "";
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("\nEnter the name of the figure you would like to");
+        System.out.println("\nEnter the name of the symbol you would like to");
         System.out.print("print, or X to return to the main menu: ");
 
         while(!validName)
         {
-            // Debugging
-            System.out.println("J");
-
             userInput = scanner.nextLine();
 
             if(userInput.equalsIgnoreCase("X"))
@@ -51,13 +48,7 @@ public class SymbolList
             for (int j = 0; j < theList.length; j++)
             {
                 if(theList[j] == null)
-                {
-
-                    // Debugging
-                    System.out.println("K");
-
                     break;
-                }
 
                 else if (userInput.equalsIgnoreCase(theList[j].getSymbolName()))
                 {
@@ -67,14 +58,10 @@ public class SymbolList
                     return;
                 }
 
-                // Debugging
-                System.out.println("I");
             }
 
-            scanner.nextLine();
-
             System.out.println("\nInvalid name.");
-            System.out.println("Enter the name of the figure you would like to");
+            System.out.println("Enter the name of the symbol you would like to");
             System.out.print("print, or X to return to the main menu: ");
         }
     }

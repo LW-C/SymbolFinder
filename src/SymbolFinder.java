@@ -5,8 +5,8 @@ public class SymbolFinder
 {
     /*
      *  The goal of printOptionsAndCatchErrors is to find
-     *  what the user would like to do next: list the figures
-     *  to print, print a figure or exit the program.
+     *  what the user would like to do next: list the symbols
+     *  to print, print a symbol or exit the program.
      */
     public static int printOptionsAndCatchErrors()
     {
@@ -14,8 +14,8 @@ public class SymbolFinder
         Boolean error = true;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("\n1. List the Figures to Print");
-        System.out.println("2. Print a Figure");
+        System.out.println("\n1. List the Symbols to Print");
+        System.out.println("2. Print a Symbol");
         System.out.println("3. Exit");
         System.out.print("\nWhat would you like to do? ");
 
@@ -51,8 +51,8 @@ public class SymbolFinder
 
             scanner.nextLine();
 
-            System.out.println("\n1. List the Figures to Print");
-            System.out.println("2. Print a Figure");
+            System.out.println("\n1. List the Symbols to Print");
+            System.out.println("2. Print a Symbol");
             System.out.println("3. Exit");
             System.out.print("\nWhat would you like to do? ");
         }
@@ -63,7 +63,6 @@ public class SymbolFinder
     {
         SymbolList aList = new SymbolList();
         int userChoice;
-        String userFigure = "";
 
         System.out.println("Hello.");
         System.out.println("Welcome to Symbol Finder.");
@@ -74,13 +73,13 @@ public class SymbolFinder
         {
             if (userChoice == 1)
             {
-                // List the figures to print
+                // List the symbols to print
                 aList.printTheList();
             }
             else if (userChoice == 2)
             {
-                // Print a figure
-                aList.printAFigure();
+                // Print a symbol
+                aList.printASymbol();
             }
 
             userChoice = printOptionsAndCatchErrors();

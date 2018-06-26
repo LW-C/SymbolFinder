@@ -80,7 +80,6 @@ public class SymbolList
         theList[5] = new Symbol("Hungry", "(っ˘ڡ˘ς)");
         theList[6] = new Symbol("Sad", "｡ﾟ･（>﹏<）･ﾟ｡");
         theList[7] = new Symbol("Angry", "(-`Д´-ﾉ；)ﾉ");
-
         theList[8] = new Symbol("Slow Clap", "(‘▿’ʃʃ");
         theList[9] = new Symbol("Cat", "(^･ｪ･^)");
         theList[10] = new Symbol("Dog", "(❍ᴥ❍ʋ)");

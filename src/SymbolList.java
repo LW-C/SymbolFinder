@@ -1,3 +1,7 @@
+/*
+ *  Symbols found on http://japaneseemoticons.me/
+ */
+
 import java.util.Scanner;
 
 public class SymbolList
@@ -70,5 +74,18 @@ public class SymbolList
     {
         theList[0] = new Symbol("Hello", "(^ _ ^)/");
         theList[1] = new Symbol("Goodbye", "( ^_^)／");
+        theList[2] = new Symbol("Shrug", "¯\\_(ツ)_/¯");
+        theList[3] = new Symbol("Love", "(｡♥‿♥｡)");
+        theList[4] = new Symbol("Happy", "(•‿•)");
+        theList[5] = new Symbol("Hungry", "(っ˘ڡ˘ς)");
+        theList[6] = new Symbol("Sad", "｡ﾟ･（>﹏<）･ﾟ｡");
+        theList[7] = new Symbol("Angry", "(-`Д´-ﾉ；)ﾉ");
+
+        theList[8] = new Symbol("Slow Clap", "(‘▿’ʃʃ");
+        theList[9] = new Symbol("Cat", "(^･ｪ･^)");
+        theList[10] = new Symbol("Dog", "(❍ᴥ❍ʋ)");
+        theList[11] = new Symbol("Bird", "(◉⊖◉)");
+        theList[12] = new Symbol("Bunny", "／(･ × ･)＼");
+        theList[13] = new Symbol("Pig", "(´･(00)･｀)");
     }
 }

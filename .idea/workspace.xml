@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2976e46a-72a8-4003-b029-428d05cd2b69" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SymbolFinder.java" afterPath="$PROJECT_DIR$/src/SymbolFinder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SymbolList.java" afterPath="$PROJECT_DIR$/src/SymbolList.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,9 +29,11 @@
       <file leaf-file-name="SymbolList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SymbolList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1029">
-              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="700">
+              <caret line="88" column="18" lean-forward="false" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#2850#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,8 +84,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Symbol.java" />
-        <option value="$PROJECT_DIR$/src/SymbolList.java" />
         <option value="$PROJECT_DIR$/src/SymbolFinder.java" />
+        <option value="$PROJECT_DIR$/src/SymbolList.java" />
       </list>
     </option>
   </component>
@@ -292,12 +293,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529767466689</updated>
-      <workItem from="1529767470311" duration="14957000" />
+      <workItem from="1529767470311" duration="17349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14957000" />
+    <option name="totallyTimeSpent" value="17349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -374,9 +375,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SymbolList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1029">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="700">
+          <caret line="88" column="18" lean-forward="false" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#2850#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
